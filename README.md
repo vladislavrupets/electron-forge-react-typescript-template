@@ -1,54 +1,54 @@
-# Electron React TypeScript Template
+# ⚡ Electron React TypeScript Template
 
-This project is a template for creating an Electron application based on Electron Forge using React and TypeScript. The project is pre-configured to kickstart development, providing a basic structure and configuration.
+A pre-configured template for developing Electron applications with React and TypeScript using Electron Forge. This setup provides a well-structured foundation for building cross-platform desktop applications.
 
-## Features
+## 🚀 Features
 
-- **React**: Harness the power of React to build the user interface for your Electron application.
-- **TypeScript**: All code is written in TypeScript to enhance readability, support, and static typing.
-- **Webpack**: The project is built using Webpack, providing efficient code organization and optimization.
-- **Electron**: The project is ready to use with Electron, allowing you to easily create cross-platform desktop applications.
+- 🎨 **React**: Leverage the power of React for building dynamic user interfaces.
+- 🔷 **TypeScript**: Utilize TypeScript for better code maintainability, readability, and static typing.
+- 📦 **Webpack**: Optimized bundling and asset management with Webpack.
+- 🖥 **Electron**: Pre-configured for cross-platform desktop application development.
 
-## How to use
+## 📖 How to Use
 
-*Clone this repository locally:*
-
-``` bash
+### 🔄 Clone the Repository
+```bash
 git clone https://github.com/vladislavrupets/electron-react-typescript-template.git
 ```
 
-*Install dependencies with npm:*
-   
-``` bash
+### 📦 Install Dependencies
+```bash
 cd electron-react-typescript-template
 npm install
 ```
 
-*Start the application:*
-
-``` bash
+### ▶️ Start the Application
+```bash
 npm start
 ```
 
-## App packaging
+## 📦 App Packaging
 
-*Package the application (for any platform)*
-
-``` bash
+### 📌 Package the Application (for Any Platform)
+```bash
 npm run package
 ```
-## Notes
 
-1. To bridge Electron's and React together, you need to use a special script called a preload in `./src/electron/preload.ts`.
-2. You can add external resources (such as configuration files) to the project. Place the required file in the path `./src/extraResources/your-extra-file`. The path to external resources can be changed in `./src/forge.config.ts`:
+## 📝 Notes
+
+1️⃣ **Preload Script**: To bridge Electron and React, use the preload script located at `./src/electron/preload.ts`.
+
+2️⃣ **External Resources**: You can include extra resources (such as configuration files) by placing them in `./src/extraResources/your-extra-file`. Modify `./src/forge.config.ts` if needed:
+
 ```javascript
   const config: ForgeConfig = {
-  packagerConfig: {
-    asar: true,
-    extraResource: ["./src/extraResources"],
-  },
-  ...
+    packagerConfig: {
+      asar: true,
+      extraResource: ["./src/extraResources"],
+    },
+    ...
 ```
-3. For additional information, please refer to the [official Electron documentation](https://electronjs.org/docs) and [Electron Forge documentation](https://www.electronforge.io/docs).
 
-
+3️⃣ **Further Reading**:
+   - [📚 Electron Documentation](https://electronjs.org/docs)
+   - [🛠 Electron Forge Documentation](https://www.electronforge.io/docs)
